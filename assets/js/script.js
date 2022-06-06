@@ -1,9 +1,13 @@
+// Display the current date using moment.js
 var date = moment().format("dddd, MMMM Do YYYY");
 $("#currentDay").text(date);
 
+// Function to color code the time blocks
 function colorCodeTimeBlocks() {
+  // getting the current hour
   let currentHour = parseInt(moment().format("H"));
 
+  // for each text area, we check the time block and the current time to add the class that sets the background color
   $("textarea").each(function(){
     let textareaTime = parseInt($(this).attr("id"));
     
@@ -17,6 +21,7 @@ function colorCodeTimeBlocks() {
   });
 }
 
+// when the save icon is clicked, we store the taak and the id in local storage
 $(".fas").click(function(e) {   
   let taskId = $(this).parent().parent().attr("id");
   let task = $(this).parent().prev().val().trim();
@@ -26,6 +31,7 @@ $(".fas").click(function(e) {
   }  
 })
 
+// when the page is opened or refreshed, we get the tasks stored in local storage and display them in their corresponding time blocks
 function displayTasks() {
    
   $("textarea[id='8']").val(localStorage.getItem("8"));
@@ -42,5 +48,6 @@ function displayTasks() {
   
 }
 
+// calling the colorCodeTimeBlocks and the displayTasks functions
 colorCodeTimeBlocks();
 displayTasks();
