@@ -51,8 +51,8 @@ THEN the saved events persist
 
 ### Links
 
-- [Github Repository]()
-- [Github Pages URL]()
+- [Github Repository](https://github.com/rmdn321/5-Work-Day-Scheduler)
+- [Github Pages URL](https://rmdn321.github.io/5-Work-Day-Scheduler/)
 
 ## My process
 
