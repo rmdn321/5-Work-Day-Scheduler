@@ -51,8 +51,8 @@ THEN the saved events persist
 
 ### Links
 
-- [Github Repository](https://github.com/rmdn321/4-JS-Quiz)
-- [Github Pages URL](https://rmdn321.github.io/4-JS-Quiz/)
+- [Github Repository]()
+- [Github Pages URL]()
 
 ## My process
 
