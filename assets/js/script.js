@@ -28,6 +28,15 @@ $(".fas").click(function(e) {
     
   if (task) {
     localStorage.setItem(taskId,task);
+    // Display success message
+    $(".message").removeClass("d-none");
+    $(".message").addClass("d-block");
+
+    // Remove the message after 2 seconds
+    setTimeout(() => {
+      $(".message").removeClass("d-block");
+      $(".message").addClass("d-none");      
+    }, "2000")   
   }  
 })
 

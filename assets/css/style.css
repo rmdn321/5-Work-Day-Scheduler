@@ -25,6 +25,13 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+.success {
+color: #1c8132;
+font-size: 20px;
+font-weight: bolder;
+font-style: italic;
+}
+
 .description {
   white-space: pre-wrap;
   border: 1px solid black;
